@@ -57,7 +57,7 @@ ps. ref using vscode as editor so that you can see the markdown file in live, li
 
 ---
 ### 9. Host it on github / Push the commits(changes)
-open terminal in the project > run `$git commit -m '<your_comments>'` > `$git push`<br>
+open terminal in the project > run `git add . && git commit -m '<your_comments>' && git push`<br>
 you can check the status on Github > Actions<br>
 (this works by github CICD: Github Actions)<br>
 (deploy detail is on: \\.github\workflows\pages-deploy.yml)<br>
