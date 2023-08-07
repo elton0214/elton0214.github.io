@@ -3,6 +3,7 @@ title: Create your blog via Jekyll - Chirpy theme
 date: 2023-05-04
 categories: [startup]
 tags: [firstblog]
+author: elton0214
 ---
 
 # Brief
@@ -49,8 +50,17 @@ title: Create your blog via Jekyll - Chirpy theme
 date: 2023-05-04
 categories: [startup]
 tags: [firstblog]
+author: <author_id>
 ---
 ```
+also, adding author information in _data/authors.yml
+```
+<author_id>:
+  name: <full name>
+  twitter: <twitter_of_author>
+  url: <homepage_of_author>
+```
+
 after update your post, refresh local:4000 to see the updates.<br>
 ps. ref using vscode as editor so that you can see the markdown file in live, like this:
 ![](/assets/images/ref-to-use-vscode.jpg)
@@ -58,7 +68,7 @@ ps. ref using vscode as editor so that you can see the markdown file in live, li
 ---
 ### 9. Host it on github / Push the commits(changes)
 open terminal in the project > run `git add . && git commit -m '<your_comments>' && git push`<br>
-you can check the status on Github > Actions<br>
+you can check the status on Github > Repo > Actions<br>
 (this works by github CICD: Github Actions)<br>
 (deploy detail is on: \\.github\workflows\pages-deploy.yml)<br>
 
